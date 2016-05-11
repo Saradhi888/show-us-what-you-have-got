@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<script>
+function ValidateEmail(uemail)  
+{  
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+if(uemail.value.match(mailformat))  
+{  
+return true;  
+}  
+else  
+{  
+alert("You have entered an invalid email address!");  
+uemail.focus();  
+return false;  
+}  
+}  
+
+</script>
+<body>
+<H1>LIBRARY MANAGEMENT SYTEM</H1>
+<H2>LOGIN</H2>
+<form action="">
+User ID:<br>
+<input type="text" name="uemail">
+<br>
+User password:<br>
+<input type="password" name="psw"><br>
+<br>
+
+<select name="select" value=>
+  <option >Select</option>
+  <option value="student">Student</option>
+  <option value="librarian">Librarian</option>
+</select>
+<button type="submit">submit</button>
+</form>
+
+<p>The characters in a password field are masked (shown as asterisks or circles).</p>
+
+</body>
+</html>
