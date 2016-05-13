@@ -1,26 +1,37 @@
 package libraryManagement;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class MemberReg {
+	@Id
 	private int Id;
 	private String Name,Password,Email,Branch,Gender;
 	
-	public int Id(){
+	public int getId(){
 		return Id;
 	}
-	public String Name(){
+	public String getName(){
 		return Name;
 	}
-	public String Password(){
+	public String getPassword(){
 		return Password;
 	}
-	public String Email(){
+	public String getEmail(){
 		return Email;
 	}
+	public String getBranch(){
+		return Branch;
+	}public String getGender(){
+		return Gender;
+	}
+	
 	
 	public void setId(int Id){
 		this.Id=Id;
 	}
-	public void Name(String Name){
+	public void setName(String Name){
 		this.Name=Name;
 	}
 	public void setEmail(String Email){
